@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 import AddSumReducer from "./AddSumReducer";
-import { MulReducer } from "./MulReducer";
+import MultiDiviReducer from "./MultiDiviReducer";
 
 
 
 
 export default combineReducers({
     AddSumReducer : AddSumReducer,
-    MulReducer :MulReducer
+    MultiDiviReducer : MultiDiviReducer
 })

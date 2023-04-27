@@ -1,3 +1,3 @@
 
 
-export const initialState = {fname:"prashant" ,lname:"tak",value: 0 }
+export const initialState = {fname:"prashant" ,lname:"tak",value: 99 }

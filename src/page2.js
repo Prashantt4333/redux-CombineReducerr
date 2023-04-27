@@ -6,7 +6,8 @@ const Page2 = () => {
 
     let dispatch = useDispatch()
     let store =useSelector(store => {
-        return store.MulReducer
+       
+        return store.MultiDiviReducer
     })
 
     return (
@@ -19,7 +20,7 @@ const Page2 = () => {
             <h1>{store.value}</h1>
             <button className="btn btn-primary me-1" onClick={()=>{dispatch({type:"MULTPBY2",payload:2})}}>*2</button>
             <button className="btn btn-primary me-1" onClick={()=>{dispatch({type:"MULTPBY5",payload:5})}}>*5</button>
-            <button className="btn btn-primary me-1" onClick={()=>{dispatch({type:"RESET",payload:0})}}>RESET</button>
+            <button className="btn btn-primary me-1" onClick={()=>{dispatch({type:"RESET",payload:2})}}>RESET</button>
             <button className="btn btn-primary me-1" onClick={()=>{dispatch({type:"DIVIDEBY2",payload:2})}}>/2</button>
             <button className="btn btn-primary me-1" onClick={()=>{dispatch({type:"DIVIDEBY5",payload:5})}}>/5</button>
             <br/>
